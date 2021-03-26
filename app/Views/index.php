@@ -36,15 +36,15 @@
     <link rel="stylesheet" href = "/asset/css/">
 
     <!-- Owl Carousel  -->
-    <link rel="stylesheet" href = "<?php echo base_url(); ?>/asset/css/owl.carousel.css">
-    <link rel="stylesheet" href = "<?php echo base_url(); ?>/asset/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href = " /asset/css/owl.carousel.css">
+    <link rel="stylesheet" href = " /asset/css/owl.theme.default.min.css">
     <!-- Animate.css -->
-    <link rel="stylesheet" href = "<?php echo base_url(); ?>/asset/css/animate.css">
+    <link rel="stylesheet" href = " /asset/css/animate.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
     <!-- Theme style  -->
-    <link rel="stylesheet" href = "<?php echo base_url(); ?>/asset/css/style.css">
+    <link rel="stylesheet" href = " /asset/css/style.css">
 </head>
 <body>
 
@@ -91,7 +91,7 @@
             <p class="animated fadeIn wow" data-wow-delay="0.67s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptates, aliquid soluta distinctio dolorum tenetur. </p>
             <button class="btn btn-md download-btn-first wow fadeInLeft animated" data-wow-delay="0.85s" onclick="$('#fh5co-download').goTo();return false;">Download</button>
             <button class="btn btn-md features-btn-first animated fadeInLeft wow" data-wow-delay="0.95s" onclick="$('#fh5co-features').goTo();return false;">Features</button>
-            <img class="fh5co-hero-smartphone animated fadeInRight wow" data-wow-delay="1s" src="<?php echo base_url(); ?>/asset/img/phone-image.png" alt="Smartphone">
+            <img class="fh5co-hero-smartphone animated fadeInRight wow" data-wow-delay="1s" src=" /asset/img/phone-image.png" alt="Smartphone">
         </div>
 
 
@@ -116,13 +116,13 @@
                 </div>
 
                 <div class="col-sm-4">
-                    <img class="grid-image" src="<?php echo base_url(); ?>/asset/img/icon-2.png" alt="Icon-2">
+                    <img class="grid-image" src=" /asset/img/icon-2.png" alt="Icon-2">
                     <h1 class="grid-title">Parallax Effect</h1>
                     <p class="grid-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cupiditate.</p>
                 </div>
 
                 <div class="col-sm-4">
-                    <img class="grid-image" src="<?php echo base_url(); ?>/asset/img/icon-3.png" alt="Icon-3">
+                    <img class="grid-image" src=" /asset/img/icon-3.png" alt="Icon-3">
                     <h1 class="grid-title">Unlimited Colors</h1>
                     <p class="grid-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cupiditate.</p>
                 </div>
@@ -144,10 +144,10 @@
 
             <div class="owl-carousel owl-theme">
 
-                <div class="item"><img src="<?php echo base_url(); ?>/asset/img/smartphone-2.png" alt=""></div>
-                <div class="item"><img src="<?php echo base_url(); ?>/asset/img/smartphone-2.png" alt=""></div>
-                <div class="item"><img src="<?php echo base_url(); ?>/asset/img/iphone.png" alt=""></div>
-                <div class="item"><img src="<?php echo base_url(); ?>/asset/img/smartphone-2.png" alt=""></div>
+                <div class="item"><img src=" /asset/img/smartphone-2.png" alt=""></div>
+                <div class="item"><img src=" /asset/img/smartphone-2.png" alt=""></div>
+                <div class="item"><img src=" /asset/img/iphone.png" alt=""></div>
+                <div class="item"><img src=" /asset/img/smartphone-2.png" alt=""></div>
 
 
             </div>
@@ -168,7 +168,7 @@
 
                 <div class="col-sm-6 in-order-1 wow animated fadeInLeft" data-wow-delay="0.22s">
                     <div class="col-sm-image-container">
-                        <img class="img-float-left" src="<?php echo base_url(); ?>/asset/img/smartphone-1.png" alt="smartphone-1">
+                        <img class="img-float-left" src=" /asset/img/smartphone-1.png" alt="smartphone-1">
                         <span class="span-new">NEW</span>
                         <span class="span-free">Free</span>
                     </div>
@@ -191,12 +191,12 @@
                 </div>
 
                 <div class="col-sm-6 in-order-4 wow animated fadeInRight" data-wow-delay="0.22s">
-                    <img class="img-float-right" src="<?php echo base_url(); ?>/asset/img/smartphone-2.png" alt="smartphone-2">
+                    <img class="img-float-right" src=" /asset/img/smartphone-2.png" alt="smartphone-2">
                 </div>
 
                 <div class="col-sm-6 in-order-5 wow animated fadeInLeft" data-wow-delay="0.22s">
                     <div class="col-sm-image-container">
-                        <img class="img-float-left" src="<?php echo base_url(); ?>/asset/img/smartphone-2.png" alt="smartphone-3">
+                        <img class="img-float-left" src=" /asset/img/smartphone-2.png" alt="smartphone-3">
                         <span class="span-data">DATA</span>
                         <span class="span-percent">100%</span>
                     </div>
@@ -230,16 +230,16 @@
         <div class="container fh5co-reviews-inner">
             <div class="row justify-content-center">
                 <div class="col-sm-5 wow fadeIn animated" data-wow-delay="0.25s">
-                    <img class="float-left" src="<?php echo base_url(); ?>/asset/img/quotes-1.jpg" alt="Quote 1">
+                    <img class="float-left" src=" /asset/img/quotes-1.jpg" alt="Quote 1">
                     <p class="testimonial-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis similique quasi.</p>
                     <small class="testimonial-author">John Doe</small>
-                    <img class="float-right" src="<?php echo base_url(); ?>/asset/img/quotes-2.jpg" alt="Quote 2">
+                    <img class="float-right" src=" /asset/img/quotes-2.jpg" alt="Quote 2">
                 </div>
                 <div class="col-sm-5 testimonial-2 wow fadeIn animated" data-wow-delay="0.67s">
-                    <img class="float-left" src="<?php echo base_url(); ?>/asset/img/quotes-1.jpg" alt="Quote 1">
+                    <img class="float-left" src=" /asset/img/quotes-1.jpg" alt="Quote 1">
                     <p class="testimonial-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis similique quasi.</p>
                     <small class="testimonial-author">Someone</small>
-                    <img class="float-right" src="<?php echo base_url(); ?>/asset/img/quotes-2.jpg" alt="Quote 2">
+                    <img class="float-right" src=" /asset/img/quotes-2.jpg" alt="Quote 2">
                 </div>
             </div>
 
@@ -258,8 +258,8 @@
                     <div class="col-sm-6">
                         <h1>Comment télecharger l'application ?</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque suscipit, similique animi saepe, ipsam itaque, tempore minus maxime pariatur error unde fugit tenetur.</p>
-                        <a class="wow fadeIn animated" data-wow-delay="0.25s" href="#"><img class="app-store-btn" src="<?php echo base_url(); ?>/asset/img/app-store-icon.png" alt="App Store Icon"></a>
-                        <a class="wow fadeIn animated" data-wow-delay="0.67s" href="#"><img class="google-play-btn" src="<?php echo base_url(); ?>/asset/img/google-play-icon.png" alt="Google Play Icon"></a>
+                        <a class="wow fadeIn animated" data-wow-delay="0.25s" href="#"><img class="app-store-btn" src=" /asset/img/app-store-icon.png" alt="App Store Icon"></a>
+                        <a class="wow fadeIn animated" data-wow-delay="0.67s" href="#"><img class="google-play-btn" src=" /asset/img/google-play-icon.png" alt="Google Play Icon"></a>
                     </div>
                 </div>
             </div>
@@ -309,10 +309,10 @@
 
 </div> <!-- main page wrapper -->
 
-<script src = "<?php echo base_url(); ?>/asset/js/jquery.min.js"></script>
-<script src = "<?php echo base_url(); ?>/asset/js/bootstrap.js"></script>
-<script src = "<?php echo base_url(); ?>/asset/js/owl.carousel.js"></script>
-<script src = "<?php echo base_url(); ?>/asset/js/wow.min.js"></script>
-<script src = "<?php echo base_url(); ?>/asset/js/main.js"></script>
+<script src = " /asset/js/jquery.min.js"></script>
+<script src = " /asset/js/bootstrap.js"></script>
+<script src = " /asset/js/owl.carousel.js"></script>
+<script src = " /asset/js/wow.min.js"></script>
+<script src = " /asset/js/main.js"></script>
 </body>
 </html>
