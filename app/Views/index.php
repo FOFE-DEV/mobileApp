@@ -32,7 +32,7 @@
 
     <!-- Bootstrap  -->
     <!--    <link rel="stylesheet" href="css/bootstrap.css">-->
-    <link rel="stylesheet" href = "<?php echo base_url(); ?>/asset/css/bootstrap.css">
+    <link rel="stylesheet" href = "/asset/css/bootstrap.css">
     <link rel="stylesheet" href = "<?php echo base_url(); ?>/asset/css/">
 
     <!-- Owl Carousel  -->
