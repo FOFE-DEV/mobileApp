@@ -1,0 +1,110 @@
+packages:
+  yum:
+    mod24_ssl : []
+
+files:
+  /etc/httpd/conf.d/ssl.conf:
+    mode: "000644"
+    owner: root
+    group: root
+    content: |
+      LoadModule ssl_module modules/mod_ssl.so
+      Listen 443
+      <VirtualHost *:443>
+        <Proxy *>
+          Order deny,allow
+          Allow from all
+        </Proxy>
+
+        SSLEngine             on
+        SSLCertificateFile    "/etc/pki/tls/certs/server.crt"
+        SSLCertificateKeyFile "/etc/pki/tls/certs/server.key"
+        SSLCipherSuite        EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH
+        SSLProtocol           All -SSLv2 -SSLv3
+        SSLHonorCipherOrder   On
+        SSLSessionTickets     Off
+
+        Header always set Strict-Transport-Security "max-age=63072000; includeSubdomains; preload"
+#        Header always set X-Frame-Options DENY
+#        Header always set X-Content-Type-Options nosniff
+
+#        ProxyPass / http://localhost:80/ retry=0
+#        ProxyPassReverse / http://localhost:80/
+#        ProxyPreserveHost on
+#        RequestHeader set X-Forwarded-Proto "https" early
+
+      </VirtualHost>
+
+  /etc/pki/tls/certs/server.crt:
+    mode: "000400"
+    owner: root
+    group: root
+    content: |
+              -----BEGIN CERTIFICATE-----
+              MIIF2DCCBMCgAwIBAgISAzvW2GgG7yXxiXrNMFJWa2KsMA0GCSqGSIb3DQEBCwUA
+              MEoxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MSMwIQYDVQQD
+              ExpMZXQncyBFbmNyeXB0IEF1dGhvcml0eSBYMzAeFw0xOTEwMjIwNzQ2NThaFw0y
+              MDAxMjAwNzQ2NThaMCkxJzAlBgNVBAMTHmRqYWJiYW1hLWF3cy5zeWdhbGluLXR2
+              c2F0LmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKecNcSlWfzH
+              pW1100AdJCAF3dRqxZxh+KEV/sKjWPVF3lJV9sRMU1byAb7/uizzfaJU6bVALnQt
+              1T+0FPPh12DR2zl8GNpU1WufMDhYrpY0hJHOTl+0R6YnIk/EmYdn3WxJwOxBBG/T
+              vObpnIZ4Od1HHgSV3mMO/5Q6J9rZ/oyyWHOjq8eMdGoeFWpdEojUGPskr0P9g9NE
+              CKLOPA9gLNrtIRox9y8a4N8mTcEWbB1T6YwRNrhVK8Uc4fE/P47Aks7mxYBRQFnc
+              CjIkbei8rJ1k/VydqUuQTtLD37Y3f/4GG33gbGBMME5KtU2luBQvzVDnftLYxKZv
+              TdM7nuBLNzECAwEAAaOCAtcwggLTMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAU
+              BggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUOann
+              r1aMQZHLwhF1maZpkOCUt/kwHwYDVR0jBBgwFoAUqEpqYwR93brm0Tm3pkVl7/Oo
+              7KEwbwYIKwYBBQUHAQEEYzBhMC4GCCsGAQUFBzABhiJodHRwOi8vb2NzcC5pbnQt
+              eDMubGV0c2VuY3J5cHQub3JnMC8GCCsGAQUFBzAChiNodHRwOi8vY2VydC5pbnQt
+              eDMubGV0c2VuY3J5cHQub3JnLzCBiwYDVR0RBIGDMIGAgh5kamFiYmFtYS1hd3Mu
+              c3lnYWxpbi10dnNhdC5jb22CGmRqYWJiYW1hLnN5Z2FsaW4tdHZzYXQuY29tgiJ3
+              d3cuZGphYmJhbWEtYXdzLnN5Z2FsaW4tdHZzYXQuY29tgh53d3cuZGphYmJhbWEu
+              c3lnYWxpbi10dnNhdC5jb20wTAYDVR0gBEUwQzAIBgZngQwBAgEwNwYLKwYBBAGC
+              3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5vcmcw
+              ggEFBgorBgEEAdZ5AgQCBIH2BIHzAPEAdgDwlaRZ8gDRgkAQLS+TiI6tS/4dR+OZ
+              4dA0prCoqo6ycwAAAW3ypdklAAAEAwBHMEUCIQC51TCT+BflwgW5JAXvj/T8Ugct
+              Dw+6hsRkxAIBFCTI+AIgPQrSxO+Tk0NL9X+1PWuFwgTxQvJyl/1H34vBd8jlqpMA
+              dwAHt1wb5X1o//Gwxh0jFce65ld8V5S3au68YToaadOiHAAAAW3ypdlUAAAEAwBI
+              MEYCIQCt+/dVodZqtexjpa1PH/PpFKo7trYYWetbmXZxjrlIbwIhAKK7cvryHcYQ
+              30UKRHQu8JjL9FAv5rOSWYoth6kQAtJoMA0GCSqGSIb3DQEBCwUAA4IBAQA+4g2e
+              2IcZrgBgIr/llJXALn/pcQ0mmQKQyxgPiin1YuH54XleN99kIPOoOoABipDL9Gmg
+              3dEb8xxCr4nBDtyjAbrc71kP8n3xrXpnXXW13gGqqvaibVEtJiRKo1/BNkkCCzzz
+              qypvh5mpaPDiqr6YQJzYLeSBZXWRdh/+z1LjA9vC4mGPCg4xn3e9qWM0IUO4I50b
+              aVvyFJ6hX0WS6dhVvhx4z9deIbdpLNDip1CUBDjWimaZ3ZmA8BQeNOGuGC74RJMy
+              B8N7NmMif1d1GFh5YBt2GE/6M3W9orfjLr6LgpUbUVYLv6x0xdRFAcQVcsM/O77n
+              D6GNyJNiMzpgMou3
+              -----END CERTIFICATE-----
+
+  /etc/pki/tls/certs/server.key:
+    mode: "000400"
+    owner: root
+    group: root
+    content: |
+      -----BEGIN RSA PRIVATE KEY-----
+      MIIEowIBAAKCAQEAp5w1xKVZ/MelbXXTQB0kIAXd1GrFnGH4oRX+wqNY9UXeUlX2
+      xExTVvIBvv+6LPN9olTptUAudC3VP7QU8+HXYNHbOXwY2lTVa58wOFiuljSEkc5O
+      X7RHpiciT8SZh2fdbEnA7EEEb9O85umchng53UceBJXeYw7/lDon2tn+jLJYc6Or
+      x4x0ah4Val0SiNQY+ySvQ/2D00QIos48D2As2u0hGjH3Lxrg3yZNwRZsHVPpjBE2
+      uFUrxRzh8T8/jsCSzubFgFFAWdwKMiRt6LysnWT9XJ2pS5BO0sPftjd//gYbfeBs
+      YEwwTkq1TaW4FC/NUOd+0tjEpm9N0zue4Es3MQIDAQABAoIBAFL6TdAtwDAZsrdP
+      FqduBd1oqhqoRW6XPhyZpAc+ESNUVK1Ua5dg5f1sUBr7xXLNlMwR16XowVa4/hLM
+      l3bpvtPq8OozmqY0S3g9VgT/OmeYVm1MwpY0zSffxefRv+Q+MmuS09Til0y5eZKj
+      4t7blGIM/Dpu66sE2NjMNcDuHUwPjfs7gtNSe+kqwmk68t/Kcx/nISAK64eVtXAy
+      heDxyHoYV+tsUfZwRomPl6lMc/QdiFW9xe7dnzoy4juTpy2hxYIzA57p+3iY3paa
+      aG0tT820czfFWTbhZzIVd1lURuQgbXCjiblj29KcmSFRu7aMR7Om39Uy08p8Xm8Y
+      gQ0eh0ECgYEA1D60bv5pkjjsiOLikEwYElkQpYfdahTxJqq34j2lFdNZ/lt+5P1D
+      DKIuCulbyG+7Nm5olEkz1wX4AI3zUjh0jEsYoBXb+qs1bP414UpBGWTsAVxMDQNa
+      oEzdzh3Ow7FNaN4KLnm1f1WsGV155e2n1pARgix9nV2M1yj3aiCU6jkCgYEAyink
+      Y0qjDSZKstYqWcEZZGgA+5gZGO1A1F3zeaklWlWoiLZ51wD2AGzMsnef5bEKay2U
+      mITU++dQBWM39XArafDCCTdxVPgRMcfp+wfuMHtHDim06ugoEADpKIauwIqeQMJf
+      b1+S0skBnkxKjaMUREynqMaPGGCkF28G15ttlLkCgYAnpx9mrTlkDCaE3H6fntfQ
+      dbtacau4Kflz0+lO5110WmwxzT5D4d0o+xPHDhoLtHQxkycOrS52ObM/x0VyUwHT
+      RCRxpCPZDSuKFWRTlt/asrQ0/N1ogPvpfvLhk0gR34oq0XDtheeWxpbElmYzwtbc
+      i0X6H/3H7LZnbEvtE/E+YQKBgChLt1lPPDbXxhXleGWRhsUrsd50T7RXPg/Wdjxu
+      yaI65q/xZ1HCwEYPabG9BGMdKc15NWA9QdLAJYQdZb8HT6/7LEH4Ch/8njjE909x
+      IjoJqH0bNROJmMqv08mfJt/8AVU5KRqi+zoGlMr/u/CFa/m9KcILaeRbBvogyEVb
+      lrkJAoGBAIGn5znHItceA3S9i2YkGIGttNLeGIylzwkNCa7faL9v1OpeOrBFSVbE
+      40YsXCH8RjKWYXQQAgFviH5Y1X3BUXHoOh7uJaSfLT5y3oFQgFU/mKddeYYGe6Sa
+      9uksIn0dwvDBeetYj5aLBZhX5d3KgoJu/HXiPvrpLowoY6aNVwot
+      -----END RSA PRIVATE KEY-----
+
