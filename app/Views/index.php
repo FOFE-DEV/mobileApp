@@ -33,7 +33,7 @@
     <!-- Bootstrap  -->
     <!--    <link rel="stylesheet" href="css/bootstrap.css">-->
     <link rel="stylesheet" href = "/asset/css/bootstrap.css">
-    <link rel="stylesheet" href = "<?php echo base_url(); ?>/asset/css/">
+    <link rel="stylesheet" href = "/asset/css/">
 
     <!-- Owl Carousel  -->
     <link rel="stylesheet" href = "<?php echo base_url(); ?>/asset/css/owl.carousel.css">
@@ -110,7 +110,7 @@
             <div class="row fh5co-advantages-grid-columns wow animated fadeIn" data-wow-delay="0.36s">
 
                 <div class="col-sm-4">
-                    <img class="grid-image" src="<?php echo base_url(); ?>/asset/img/icon-1.png" alt="Icon-1">
+                    <img class="grid-image" src="/asset/img/icon-1.png" alt="Icon-1">
                     <h1 class="grid-title">Usability</h1>
                     <p class="grid-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cupiditate.</p>
                 </div>
