@@ -7,6 +7,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
     <title>App &mdash; Free Website Template, Free HTML5 Template by FreeHTML5.co</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
@@ -25,7 +31,7 @@
     <meta name="twitter:card" content="" />
 
     <!-- Bootstrap  -->
-<!--    <link rel="stylesheet" href="css/bootstrap.css">-->
+    <!--    <link rel="stylesheet" href="css/bootstrap.css">-->
     <link rel="stylesheet" href = "<?php echo base_url(); ?>/asset/css/bootstrap.css">
     <link rel="stylesheet" href = "<?php echo base_url(); ?>/asset/css/">
 
@@ -60,16 +66,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-items-center ml-auto mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Accueil<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="$('#fh5co-features').goTo();return false;">Features</a>
+                        <a class="nav-link" href="#" onclick="$('#fh5co-features').goTo();return false;">Fonctionnalités</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="$('#fh5co-reviews').goTo();return false;">Reviews</a>
+                        <a class="nav-link" href="#" onclick="$('#fh5co-reviews').goTo();return false;">Avis</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"  onclick="$('#fh5co-download').goTo();return false;">Download</a>
+                        <a class="nav-link" href="#"  onclick="$('#fh5co-download').goTo();return false;">Téléchargez</a>
                     </li>
                 </ul>
                 <div class="social-icons-header">
@@ -250,7 +256,7 @@
             <div class="container fh5co-bottom-inner">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h1>How to download the app?</h1>
+                        <h1>Comment télecharger l'application ?</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque suscipit, similique animi saepe, ipsam itaque, tempore minus maxime pariatur error unde fugit tenetur.</p>
                         <a class="wow fadeIn animated" data-wow-delay="0.25s" href="#"><img class="app-store-btn" src="<?php echo base_url(); ?>/asset/img/app-store-icon.png" alt="App Store Icon"></a>
                         <a class="wow fadeIn animated" data-wow-delay="0.67s" href="#"><img class="google-play-btn" src="<?php echo base_url(); ?>/asset/img/google-play-icon.png" alt="Google Play Icon"></a>
@@ -275,10 +281,10 @@
                 <div class="column-2-3">
                     <nav class="footer-nav">
                         <ul>
-                            <a href="#" onclick="$('#fh5co-hero-wrapper').goTo();return false;"><li>Home</li></a>
-                            <a href="#" onclick="$('#fh5co-features').goTo();return false;"><li>Features</li></a>
-                            <a href="#" onclick="$('#fh5co-reviews').goTo();return false;"><li>Reviews</li></a>
-                            <a href="#" onclick="$('#fh5co-download').goTo();return false;"><li class="active">Download</li></a>
+                            <a href="#" onclick="$('#fh5co-hero-wrapper').goTo();return false;"><li>Accueil </li></a>
+                            <a href="#" onclick="$('#fh5co-features').goTo();return false;"><li>Fonctionnalités</li></a>
+                            <a href="#" onclick="$('#fh5co-reviews').goTo();return false;"><li>Avis</li></a>
+                            <a href="#" onclick="$('#fh5co-download').goTo();return false;"><li class="active">Téléchargez</li></a>
                         </ul>
                     </nav>
                 </div>
@@ -293,7 +299,7 @@
 
             <span class="border-bottom-footer"></span>
 
-            <p class="copyright">&copy; 2018 App. All rights reserved. Design by <a href="https://freehtml5.co" target="_blank">FreeHTML5</a>.</p>
+            <p class="copyright">&copy; 2020 SYGALIN SAS . All rights reserved. Design by <a href="https://freehtml5.co" target="_blank">FreeHTML5</a>.</p>
 
         </div>
     </footer>
